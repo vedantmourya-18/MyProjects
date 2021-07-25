@@ -13,6 +13,7 @@ class _CategoryState extends State<Category> {
   @override
   Widget build(BuildContext context) {
     Size _size = MediaQuery.of(context).size;
+    String Api;
     return Container(
 
       child: Column(
@@ -25,7 +26,7 @@ class _CategoryState extends State<Category> {
                 Navigator.push(context , MaterialPageRoute(builder: (context)
                 {
                   return Onpass(
-                    Url: "https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=44c28fd5e12e49d5bdc0d8574014428f", Title: "Sports",
+                    Url: "https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=$Api", Title: "Sports",
                   );
                 }));
               },),
@@ -33,7 +34,7 @@ class _CategoryState extends State<Category> {
                 Navigator.push(context , MaterialPageRoute(builder: (context)
                 {
                   return Onpass(
-                    Url: "https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=44c28fd5e12e49d5bdc0d8574014428f", Title: "Business",
+                    Url: "https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=$Api", Title: "Business",
                   );
                 }));
               },),
@@ -46,7 +47,7 @@ class _CategoryState extends State<Category> {
                 Navigator.push(context , MaterialPageRoute(builder: (context)
                 {
                   return Onpass(
-                    Url: "https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=44c28fd5e12e49d5bdc0d8574014428f", Title: "entertainment",
+                    Url: "https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=$Api", Title: "entertainment",
                   );
                 }));
               },),
@@ -54,7 +55,7 @@ class _CategoryState extends State<Category> {
                 Navigator.push(context , MaterialPageRoute(builder: (context)
                 {
                   return Onpass(
-                    Url: "https://newsapi.org/v2/top-headlines?country=in&category=health&apiKey=44c28fd5e12e49d5bdc0d8574014428f", Title: "Health",
+                    Url: "https://newsapi.org/v2/top-headlines?country=in&category=health&apiKey=$Api", Title: "Health",
                   );
                 }));
               },),
@@ -67,7 +68,7 @@ class _CategoryState extends State<Category> {
                 Navigator.push(context , MaterialPageRoute(builder: (context)
                 {
                   return Onpass(
-                    Url: "https://newsapi.org/v2/top-headlines?country=in&category=science&apiKey=44c28fd5e12e49d5bdc0d8574014428f", Title: "Science",
+                    Url: "https://newsapi.org/v2/top-headlines?country=in&category=science&apiKey=$Api", Title: "Science",
                   );
                 }));
               },),
@@ -75,7 +76,7 @@ class _CategoryState extends State<Category> {
                 Navigator.push(context , MaterialPageRoute(builder: (context)
                 {
                   return Onpass(
-                    Url: "https://newsapi.org/v2/everything?q=world&apiKey=44c28fd5e12e49d5bdc0d8574014428f" , Title: "World",
+                    Url: "https://newsapi.org/v2/everything?q=world&apiKey=$Api" , Title: "World",
                   );
                 }));
               },),

@@ -142,7 +142,7 @@ class News{
   List<NewsModel> news = [];
 
   Future<void> getNews() async {
-    var url = "https://newsapi.org/v2/top-headlines?country=in&apiKey=44c28fd5e12e49d5bdc0d8574014428f#" ;
+    var url = "https://newsapi.org/v2/top-headlines?country=in&apiKey=Api" ;//enter api key
     var response = await http.get(Uri.parse(url));
     var jsonData = jsonDecode(response.body);
 

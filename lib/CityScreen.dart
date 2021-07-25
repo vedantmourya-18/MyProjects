@@ -13,6 +13,7 @@ class _cityScreenState extends State<cityScreen> {
   Widget build(BuildContext context) {
     Size _size = MediaQuery.of(context).size;
     String CityName;
+    String Api;
     final fieldText = TextEditingController();
 
     void clearText() {
@@ -64,7 +65,7 @@ class _cityScreenState extends State<cityScreen> {
                   Navigator.push(context , MaterialPageRoute(builder: (context)
                   {
                     return Onpass(
-                      Url: "https://newsapi.org/v2/everything?q=$CityName&sortBy=popularity&apiKey=44c28fd5e12e49d5bdc0d8574014428f",
+                      Url: "https://newsapi.org/v2/everything?q=$CityName&sortBy=popularity&apiKey=$Api",//enter api key
                       Title: CityName,
                     );
                   }));
