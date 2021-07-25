@@ -1,10 +1,14 @@
 # bulletin
 
-A new Flutter application.
+This is a news app.
+In this app you can read the news in brief,
+search the news by categories,and can do custom
+search. Also you can view the news you want in 
+web view.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project is a complete Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
 
